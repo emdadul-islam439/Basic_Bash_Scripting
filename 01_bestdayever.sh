@@ -35,12 +35,36 @@
 # don't keep any space between equal sign and variable value
 # structure: <file-name>.sh <space>  <1st-param> <space> <2nd-param> ....
 # example: "./01_bestdayever.sh emdad beard"
-name=$1 #1st positional param
-object_to_complement=$2 #2nd positional param
+# explanation: 
+# './01_bestdayever.sh'-> execute the file '01_bestdayever.sh', 
+# 'emdad'->1st-param, 
+# 'beard'->2nd-param
 
-echo "Good Morning $name!"
-sleep 1
-echo "You're looking good today $name!"
-sleep 1
-echo "You have the best $object_to_complement I've ever seen $name!!"
+# name=$1 #1st positional param
+# object_to_complement=$2 #2nd positional param
+
+# echo "Good Morning $name!"
+# sleep 1
+# echo "You're looking good today $name!"
+# sleep 1
+# echo "You have the best $object_to_complement I've ever seen $name!!"
+
+
+## step 5:executing linux command while assigning variable
+
+# don't keep any space between equal-sign and variable value
+# structure: <variable-name>=$(<command-name>)
+# example: "user_name=$(whoami)"
+# explanation: 
+# 'user_name' -> variable-name
+# '$(whoami)' -> execute the command 'whoami' and save the output
+
+# if sudo-> 'root', else-> 'emdad439'
+user_name=$(whoami) #'whoami' -> 'who am i' command print the current user-name of linux
+date_today=$(date) #'date' -> print the date 
+working_directory=$(pwd) #'pwd' -> 'present working directory' show the path to 'pwd'
+
+echo "Your user-name is: $user_name"
+echo "Today is: $date_today"
+echo "You are in: $working_directory"
 
