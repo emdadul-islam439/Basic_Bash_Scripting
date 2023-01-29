@@ -62,7 +62,7 @@
 # if sudo-> 'root', else-> 'emdad439'
 user_name=$(whoami) #'whoami' -> 'who am i' command print the current user-name of linux
 date_today=$(date) #'date' -> print the date 
-working_directory=$(pwd) #'pwd' -> 'present working directory' show the path to 'pwd'
+working_directory=$(pwd) #'pwd' -> 'print working directory' print the path to current 'wd'
 
 echo "Your user-name is: $user_name"
 echo "Today is: $date_today"
