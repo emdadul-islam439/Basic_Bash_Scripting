@@ -22,7 +22,7 @@
 ## step 2:Print with a variable [scanned value]
 
 # don't keep any space between equal sign and variable value
-echo "Enter a name: "; read name
+echo "Enter a name: $(read name)"
 echo "Good Morning $name!"
 sleep 1
 
