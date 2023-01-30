@@ -9,12 +9,16 @@ option3
 
 choice=$1
 
-if[$choice==$arr[0]]; then
-  echo arr[0]
-elif[$choice==$arr[1]]; then
-  echo arr[1]
-elif[$choice==$arr[2]]; then
-  echo arr[2]
-else; then
-  echo Nothing Found!
+if [ "$choice"=="($arr[0])" ]; then
+  echo "($arr[0])"
+elif [ "$choice"=="$arr[1]" ]; then
+  echo $arr[1]
+elif [ "$choice"=="$arr[2]" ]; then
+  echo $arr[2]
 fi
+
+echo Last Line!
+
+## OUTPUT:
+# option1[0]
+# Last Line!
