@@ -10,9 +10,9 @@ option3
 choice=$1
 
 echo arr[0]=${arr[0]}, arr[1]=${arr[1]}
-echo "choice=$choice"
+echo choice=$choice
 
-if [ $choice==${arr[0]} ]; then
+if [ "$choice"=="${arr[0]}" ]; then
   echo "${arr[0]}"
 elif [ "$choice"=="$arr[1]" ]; then
   echo $arr[1]
