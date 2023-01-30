@@ -18,7 +18,7 @@ elif [ $choice == ${arr[1]} ]; then
   echo ${arr[1]}
 elif [ $choice == ${arr[2]} ]; then
   echo ${arr[2]}
-elif [ ]; then
+else
   echo Nothing matched with the input!
 fi
 
@@ -30,4 +30,5 @@ echo Last Line!
 ## OUTPUT:
 # arr[0]=option1, arr[1]=option2
 # choice=option
+# Nothing matched with the input!
 # Last Line!
