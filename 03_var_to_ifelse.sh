@@ -18,6 +18,8 @@ elif [ $choice == ${arr[1]} ]; then
   echo ${arr[1]}
 elif [ $choice == ${arr[2]} ]; then
   echo ${arr[2]}
+elif []; then
+  echo Nothing matched with the input!
 fi
 
 echo Last Line!
@@ -28,4 +30,5 @@ echo Last Line!
 ## OUTPUT:
 # arr[0]=option1, arr[1]=option2
 # choice=option
+# ./03_var_to_ifelse.sh: line 21: []: command not found
 # Last Line!
