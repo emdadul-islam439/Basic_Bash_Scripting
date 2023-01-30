@@ -18,7 +18,7 @@ elif [ $choice == ${arr[1]} ]; then
   echo ${arr[1]}
 elif [ $choice == ${arr[2]} ]; then
   echo ${arr[2]}
-elif [  ]; then
+elif [ ]; then
   echo Nothing matched with the input!
 fi
 
