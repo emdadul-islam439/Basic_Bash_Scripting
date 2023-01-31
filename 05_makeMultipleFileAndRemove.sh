@@ -4,6 +4,36 @@ function current_pwd {
 	pwd
 }
 
+function length_of_number {
+	given_number=$1
+	declare -i length=0
+	while [[ given_number -gt 0 ]]; do
+		(( length++ ))
+		(( given_number/=10 ))
+	done
+	echo $length
+}
+
+
+echo "Current PWD is: $(current_pwd)"
+echo $(length_of_number 12)
+exit
+
+
+function leading_zeroes {
+	current_number=$1
+	last_number=$2
+	length_of_current_number=$(length_of_number $current_number)
+	length_needed=$(length_of_number $last_number)
+	
+	leading_zeroes=""
+	for (( i=$length_of_current_number; i<=$length_needed; i++ )) do
+		leading_zeroes+="0"
+	done
+
+	return leading_zeroes
+}
+
 function create_files {
 	## range can't be used
 	 # because they need hard-coded number
@@ -13,7 +43,7 @@ function create_files {
 	## we need loop
 	declare -i no_of_files=$1
 	for (( i=0; i<=$no_of_files; i++ )) do
-		touch file_$i
+		touch file_$(leading_zeroes $i $no_of_files)$i
 	done
 }
 
