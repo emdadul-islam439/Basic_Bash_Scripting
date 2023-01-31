@@ -122,6 +122,30 @@ echo
 echo
 
 
+
+######## REMOVING PORTION STARTED................
+
+### Before removing, changing the permission into-> writable
+# Because there will be errors. like->
+# rm: remove write-protected regular empty file '00_test_file'? y
+# rm: remove write-protected regular empty file '01_test_file'? y.
+# ...
+
+sleep 2
+echo "Changing the permission into: readable-writable for the user-only"
+echo "Before change: permission status of files starting with '0' are:"
+ls -l
+echo
+echo
+
+sleep 2
+chmod * 600 0*
+echo "After change: "
+ls -l
+echo
+echo
+
+
 ### removing all the relevant files (not folder) from the directories
 sleep 1
 echo .
@@ -148,5 +172,5 @@ echo
 sleep 2
 echo
 echo "----------------------------------"
-echo "|           Bye Bye!!	       |"
+echo "|           Bye Bye!!	        |"
 echo "----------------------------------"
