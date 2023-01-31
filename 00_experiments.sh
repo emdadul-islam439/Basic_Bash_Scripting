@@ -11,3 +11,10 @@ less	 #Failed!! Output->"Missing filename ("less --help" for help)"
 
 ### experimenting to execute another shell script from this file
 ./05_makeMultipleFileAndRemove.sh  #successfully executed!
+
+
+### push the PWD into PUSHD
+pushd $(pwd)
+
+### pop the latest directory from stack
+popd
