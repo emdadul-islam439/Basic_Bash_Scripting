@@ -27,7 +27,6 @@ function length_of_number {
 # echo $(length_of_number 12)
 # exit
 
-
 function leading_zeroes {
 	current_number=$1
 	last_number=$2
@@ -56,8 +55,8 @@ function create_files {
 	 # error: "bash: ${0..$x}: bad substitution"
 
 	## we need 'loop'
-	declare -i no_of_files=$1
-	for (( i=0; i<=$no_of_files; i++ )) do
+	no_of_files=$1
+	for (( i=1; i<=$no_of_files; i++ )) do
 		touch file_$(leading_zeroes $i $no_of_files)$i
 	done
 }
