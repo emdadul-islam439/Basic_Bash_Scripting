@@ -14,7 +14,11 @@ less	 #Failed!! Output->"Missing filename ("less --help" for help)"
 
 
 ### push the PWD into PUSHD
-pushd $(pwd)
+pushd $(pwd) # WORKED!
 
 ### pop the latest directory from stack
 popd
+
+
+### output-will be go to a "NULL" place (WOW!!!)
+echo "saving ouput of 'ls' into /dev/null: $(ls > /dev/null)"
