@@ -6,7 +6,7 @@ function current_pwd {
 
 function length_of_number {
 	given_number=$1
-	declare -i length=0
+	length=0
 	while [[ given_number -gt 0 ]]; do
 		(( length++ ))
 		(( given_number/=10 ))
@@ -35,20 +35,20 @@ function leading_zeroes {
 	echo $leading_zeroes
 }
 
-## following lines are written for testing 'leading_zeroes' function
-echo "leading_zeroes 9 100 -> $(leading_zeroes 9 100)"
-echo "leading_zeroes 17 100 -> $(leading_zeroes 17 100)"
-echo "leading_zeroes 100 100 -> $(leading_zeroes 100 100)"
-exit
+## following some commented lines are written for testing 'leading_zeroes' function
+# echo "leading_zeroes 9 100 -> $(leading_zeroes 9 100)"
+# echo "leading_zeroes 17 100 -> $(leading_zeroes 17 100)"
+# echo "leading_zeroes 100 100 -> $(leading_zeroes 100 100)"
+# exit
 
 
 function create_files {
-	## range can't be used
+	## 'range' can't be used
 	 # because they need hard-coded number
 	 # touch file_${01..150}
 	 # error: "bash: ${0..$x}: bad substitution"
 
-	## we need loop
+	## we need 'loop'
 	declare -i no_of_files=$1
 	for (( i=0; i<=$no_of_files; i++ )) do
 		touch file_$(leading_zeroes $i $no_of_files)$i
