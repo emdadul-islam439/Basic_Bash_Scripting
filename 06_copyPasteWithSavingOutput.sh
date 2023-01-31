@@ -122,3 +122,31 @@ echo
 echo
 
 
+### removing all the relevant files (not folder) from the directories
+sleep 1
+echo .
+sleep 1
+echo ...
+sleep 1
+echo .....
+sleep 2
+echo "removing all the experiment related files (not folders)..."
+rm *
+rm ../CopyPastingFolder/*
+echo
+echo "After removing, 'Test' folder is->"
+ls
+echo
+
+sleep 2
+echo "After removing, '../CopyPastingFolder' folder is->"
+ls ../CopyPastingFolder
+echo
+
+
+### Bye Bye!!
+sleep 2
+echo
+echo "----------------------------------"
+echo "|           Bye Bye!!	       |"
+echo "----------------------------------"

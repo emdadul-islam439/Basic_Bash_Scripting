@@ -1,0 +1,31 @@
+'00_test_file' -> '../CopyPastingFolder/00_test_file'
+cp: cannot open '00_test_file' for reading: Permission denied
+'01_test_file' -> '../CopyPastingFolder/01_test_file'
+cp: cannot open '01_test_file' for reading: Permission denied
+'02_test_file' -> '../CopyPastingFolder/02_test_file'
+cp: cannot open '02_test_file' for reading: Permission denied
+'03_test_file' -> '../CopyPastingFolder/03_test_file'
+cp: cannot open '03_test_file' for reading: Permission denied
+'04_test_file' -> '../CopyPastingFolder/04_test_file'
+cp: cannot open '04_test_file' for reading: Permission denied
+'05_test_file' -> '../CopyPastingFolder/05_test_file'
+cp: cannot open '05_test_file' for reading: Permission denied
+'06_test_file' -> '../CopyPastingFolder/06_test_file'
+cp: cannot open '06_test_file' for reading: Permission denied
+'07_test_file' -> '../CopyPastingFolder/07_test_file'
+cp: cannot open '07_test_file' for reading: Permission denied
+'08_test_file' -> '../CopyPastingFolder/08_test_file'
+cp: cannot open '08_test_file' for reading: Permission denied
+'09_test_file' -> '../CopyPastingFolder/09_test_file'
+cp: cannot open '09_test_file' for reading: Permission denied
+'10_test_file' -> '../CopyPastingFolder/10_test_file'
+'11_test_file' -> '../CopyPastingFolder/11_test_file'
+'12_test_file' -> '../CopyPastingFolder/12_test_file'
+'13_test_file' -> '../CopyPastingFolder/13_test_file'
+'14_test_file' -> '../CopyPastingFolder/14_test_file'
+'15_test_file' -> '../CopyPastingFolder/15_test_file'
+'16_test_file' -> '../CopyPastingFolder/16_test_file'
+'17_test_file' -> '../CopyPastingFolder/17_test_file'
+'18_test_file' -> '../CopyPastingFolder/18_test_file'
+'19_test_file' -> '../CopyPastingFolder/19_test_file'
+'20_test_file' -> '../CopyPastingFolder/20_test_file'
