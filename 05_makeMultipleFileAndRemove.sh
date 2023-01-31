@@ -1,7 +1,24 @@
 #!/usr/bin/env bash
 
-current_pwd=$(pwd)
-echo "Current PWD is: $current_pwd" 
+function current_pwd {
+	pwd
+}
+
+function create_files {
+	## range can't be used
+	 # because they need hard-coded number
+	 # touch file_${01..150}
+	 # error: "bash: ${0..$x}: bad substitution"
+
+	## we need loop
+	declare -i no_of_files=$1
+	for (( i=0; i<=$no_of_files; i++ )) do
+		touch file_$i
+	done
+}
+
+
+echo "Current PWD is: $(current_pwd)" 
 sleep 1
 
 echo
@@ -14,13 +31,12 @@ echo "Going to the 'Test' directory..."
 sleep 1
 
 cd Test
-pwd=$(pwd)
-echo "New PWD: $pwd"
+echo "New PWD: $(current_pwd)"
 sleep 1
 
 echo
 echo "Creating 150 files like: file_001, file_002, and so on..."
-$(touch file_{01..150})
+$(create_files 150)
 sleep 2
 
 echo "Created 150 files. Here are them->"
