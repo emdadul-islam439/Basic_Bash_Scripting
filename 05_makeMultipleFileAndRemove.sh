@@ -14,10 +14,11 @@ function length_of_number {
 	echo $length
 }
 
-
-echo "Current PWD is: $(current_pwd)"
-echo $(length_of_number 12)
-exit
+## following some commented codes were written only
+# for testing 'current_pwd' and 'length_of_number' function
+# echo "Current PWD is: $(current_pwd)"
+# echo $(length_of_number 12)
+# exit
 
 
 function leading_zeroes {
@@ -27,12 +28,19 @@ function leading_zeroes {
 	length_needed=$(length_of_number $last_number)
 	
 	leading_zeroes=""
-	for (( i=$length_of_current_number; i<=$length_needed; i++ )) do
+	for (( i=$length_of_current_number; i<$length_needed; i++ )) do
 		leading_zeroes+="0"
 	done
 
-	return leading_zeroes
+	echo $leading_zeroes
 }
+
+## following lines are written for testing 'leading_zeroes' function
+echo "leading_zeroes 9 100 -> $(leading_zeroes 9 100)"
+echo "leading_zeroes 17 100 -> $(leading_zeroes 17 100)"
+echo "leading_zeroes 100 100 -> $(leading_zeroes 100 100)"
+exit
+
 
 function create_files {
 	## range can't be used
