@@ -67,3 +67,58 @@ ls -l
 echo
 echo
 
+
+### copy-paste all the files to ../CopyPastingFolder
+# and save the success-error status into two files
+# Hint: the files started with '0' won't be copy-pasted
+sleep 2
+echo "Copy-Pasting all files into '../CopyPastingFolder' directory"
+sleep 1
+echo "Hint: the files started with '0' won't be copy-pasted"
+echo
+sleep 1
+echo "Success log will be found into '../success.txt' file and"
+sleep 1
+echo "Error log will be found into '../error.txt' file"
+sleep 1
+echo "Both succuess and error will be into '../success-error.txt' file"
+cp -v * ../CopyPastingFolder 1>../success.txt 2>../error.txt &>../success-error.txt
+sleep 2
+echo "Copy-Pasting completed!!"
+
+
+### details of the '../CopyPastingFolder' folder
+sleep 2
+echo "Details of '../CopyPastingFolder':"
+ls ../CopyPastingFolder
+echo
+echo
+
+
+### opening "success.txt" file
+sleep 2
+echo "Details of success.txt file:"
+sleep 1
+cat ../success.txt
+echo
+echo
+
+
+### opening "error.txt" file
+sleep 2
+echo "Details of error.txt file:"
+sleep 1
+cat ../error.txt
+echo
+echo
+
+
+### opening "success-error.txt" file
+sleep 2
+echo "Details of success-error.txt file:"
+sleep 1
+cat ../success-error.txt
+echo
+echo
+
+
