@@ -5,13 +5,20 @@ function current_pwd {
 }
 
 function length_of_number {
-	given_number=$1
-	length=0
-	while [[ given_number -gt 0 ]]; do
-		(( length++ ))
-		(( given_number/=10 ))
-	done
-	echo $length
+        given_number=$1
+
+	# length of '0' should be 1
+	# but, this function returns 0
+	if [[ $given_number -eq 0 ]]; then
+		echo 1
+	else
+		length=0
+		while [[ given_number -gt 0 ]]; do
+			(( length++ ))
+			(( given_number/=10 ))
+		done
+		echo $length
+	fi
 }
 
 ## following some commented codes were written only
