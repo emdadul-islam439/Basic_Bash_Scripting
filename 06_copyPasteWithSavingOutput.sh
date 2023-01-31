@@ -139,7 +139,7 @@ echo
 echo
 
 sleep 2
-chmod * 600 0*
+chmod 200 0*
 echo "After change: "
 ls -l
 echo
