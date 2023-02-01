@@ -89,3 +89,52 @@ sleep 1
 echo -e '\033[5;31;47mStyle:BLINKING | Red on White\033[0m'
 sleep 1
 echo
+
+
+
+### Multiple Styled-texts
+sleep 1
+echo
+sleep 1
+echo "echo -e '\033[5;31;47mBLINKING PART\033[0m || \033[1;30;41mBOLD PART\033[0m' -->"
+sleep 1
+echo -e '\033[5;31;47mBLINKING PART\033[0m || \033[1;30;41mBOLD PART\033[0m'
+sleep 1
+echo
+
+sleep 1
+echo "echo -e '\033[5;31;47mBLINKING PART\033[0m || \033[4;37;40mUNDERLINED PART\033[0m'-->"
+sleep 1
+echo -e '\033[5;31;47mBLINKING PART\033[0m || \033[4;37;40mUNDERLINED PART\033[0m'
+echo
+sleep 1
+
+
+
+### Styling with VARIABLE
+echo
+sleep 2
+echo "Assigning style in variables:"
+sleep 1
+no_style="\033[0m"
+echo "no_style='\033[0m'"
+sleep 1
+bold_black_red="\033[1;30;41m"
+echo "bold_black_red='\033[1;30;41m'"
+sleep 1
+blinking_red_white="\033[5;31;47m"
+echo "blinking_red_white='\033[5;31;47m'"
+sleep 1
+echo
+sleep 1
+echo
+
+sleep 1
+echo
+sleep 1
+echo "echo -e '\$blinking_red_white BLINKING PART \$no_style || \$bold_black_red BOLD PART \$no_style' -->"
+sleep 1
+echo -e "$blinking_red_white BLINKING PART $no_style || $bold_black_red BOLD PART $no_style"
+sleep 1
+echo
+
