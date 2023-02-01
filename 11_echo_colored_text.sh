@@ -23,3 +23,31 @@ sleep 1
 echo -e '\033[34;42mColored Text\033[0m'
 sleep 1
 echo
+
+sleep 1
+echo "echo -e '\033[30;41mBlack on Red\033[0m' -->"
+sleep 1
+echo -e '\033[30;41mBlack on Red\033[0m'
+sleep 1
+echo
+
+sleep 1
+echo "echo -e '\033[37;40mWhite on Black\033[0m'-->"
+sleep 1
+echo -e '\033[37;40mWhite on Black\033[0m'
+sleep 1
+echo
+
+sleep 1
+echo "echo -e '\033[32;40mGreen on Black\033[0m'-->"
+sleep 1
+echo -e '\033[32;40mGreen on Black\033[0m'
+sleep 1
+echo
+
+sleep 1
+echo "echo -e '\033[31;47mRed on White\033[0m' -->"
+sleep 1
+echo -e '\033[31;47mRed on White\033[0m'
+sleep 1
+echo
