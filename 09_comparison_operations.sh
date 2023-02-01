@@ -6,4 +6,9 @@
 #	 	: arith-comparison-> [[ $a -lt $b ]], [[ 2 -ge 3 ]] { both a,b and 2,3 are int }
 #
 # ouput		: 0-> for 'true', 1-> for 'false'
+# other-info	: str-signs==>   ' < ', ' > ', ' <= ', ' >= ', ' == ', ' != ' 
+# 		: arith-signs==> '-lt', '-gt', ' -le', ' -ge', ' -eq', ' -ne'
 ########################################
+
+
+
