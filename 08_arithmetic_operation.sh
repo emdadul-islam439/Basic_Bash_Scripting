@@ -2,13 +2,19 @@
 
 ######### BASIC INFO #########
 # ::Basic writing form::
-# arithmetic expression written in this way -> (( ))
+# syntex: ((<arithmetic-expression>)) [double parenthesis with expression inside]
 # Example: (( 8 + 5 )), (( 5**3 )) [exponent], (( 2*3 ))
-# not-arithmetic: 8 + 5 [ without parenthesis,  "85" -> string]
+#
+# ::not-arithmetic-example:: 
+# 8 + 5 [ without parenthesis,  "85" -> string]
 # 
 # ::Assigning to a variable::
 # <variable-name>=$(( <arithmetic-expression> ))
 # Example: addition=$(( 85 + 92 )), exponentiation=$(( 6**9 ))
+#
+# ::variable inside parenthesis::
+# syntex: ((<variable-without-dollar_sign> <math-sign> <variable-without-dollar_sign>))
+# Example: ((d+2)), ((a+=b)) etc.
 # ###########################
 
 
