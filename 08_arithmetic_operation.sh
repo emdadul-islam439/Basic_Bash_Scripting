@@ -20,7 +20,7 @@ echo "assigned d=2 and c=3. now printing the values->"
 sleep 2
 echo "d = $d"
 sleep 1
-echo "e = $d"
+echo "c = $c"
 
 
 ### Assigning arithmetic expression's result to variable
@@ -33,4 +33,25 @@ e=$(( d+2 ))
 echo "e = $e"
 sleep 1
 echo
+
+
+### expressions Without assigning to variable
+sleep 1
+echo "e += 5 -> ((e+=5)) will be: $((e+=5))"
+echo
+sleep 2
+echo "e *= 3 -> ((e*=5)) will be: $((e*=3))"
+echo
+sleep 2
+echo "e /= 5 -> ((e/=5)) will be: $((e/=5))"
+echo
+sleep 2
+echo "e -= 5 -> ((e-=5)) will be: $((e-=5))"
+echo
+exit
+sleep 2
+echo "e += 5 -> ((e+=5)) will be: $((e+=5))"
+echo
+sleep 2
+echo "e += 5 -> ((e+=5)) will be: $((e+=5))"
 
