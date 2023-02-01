@@ -55,3 +55,29 @@ sleep 2
 [[ 20 -gt 100 ]]
 echo "echo \$? ==> $(echo $?) { '0': true, '1': false }"
 echo
+
+
+### printing or saving output
+sleep 1
+echo "Printing/Saving Outputs::"
+sleep 2
+echo "echo [[  20 -eq 20 ]] --> "
+sleep 1
+echo [[ 20 -eq 20 ]]
+echo
+sleep 2
+echo "echo \$[[  10 -eq 20 ]] --> "
+sleep 1
+echo $[[ 10 -eq 20 ]]
+echo
+sleep 2
+echo "echo \$([[ 10 -eq 20 ]]) --> "
+sleep 1
+echo $([[ 10 -eq 20 ]])
+echo
+sleep 2
+echo "first: [[ 10 -eq 20 ]] --> then: echo \$? -->"
+sleep 1
+[[ 10 -eq 20 ]]
+echo $?
+echo
