@@ -23,6 +23,9 @@
 #		: 	     bla-0, red-1, gr-2, ye-3, blu-4, mag-5, cy-6, wh-7
 #		: Styles ==> no-style: tput sgv0 || bold: tput bold || low-intensity: tput dim
 #		: 	     underline: tput smul || blinking: tput blink || reverse: tput rev
+#		:
+#		:
+# tput-man-page	: "man terminfo"
 ###############################################
 
 
