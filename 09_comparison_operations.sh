@@ -82,3 +82,21 @@ sleep 1
 [[ 10 -eq 20 ]]
 echo $?
 echo
+
+
+### Basic 'null & non-null' comparisons
+sleep 1
+echo "BASIC null & non-null CHECKING::"
+sleep 1
+echo "a=''"
+a=''
+sleep 1
+echo
+echo "b='cat'"
+b='cat'
+echo
+sleep 2
+echo "Output of [[ -z \$a && -n \$b ]] --> "
+[[ -z $a && -n $b ]]
+echo "echo \$? ==> $(echo $?) { '0': true, '1': false }"
+echo
