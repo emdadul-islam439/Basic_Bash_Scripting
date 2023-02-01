@@ -17,6 +17,12 @@
 #		:
 # Style-code	: Style-name(code)=> No-style(0), Bold(1), Low-intensity(2), Underline(4), 
 #		: 		     Blinking(5),Reverse(7), Invinsible(8)
+#		:
+#		:
+# tput-style	: Colors ==> Fore: tput setaf [0-7] || Back: tput setab [0-7]
+#		: 	     bla-0, red-1, gr-2, ye-3, blu-4, mag-5, cy-6, wh-7
+#		: Styles ==> no-style: tput sgv0 || bold: tput bold || low-intensity: tput dim
+#		: 	     underline: tput smul || blinking: tput blink || reverse: tput rev
 ###############################################
 
 
@@ -138,3 +144,30 @@ echo -e "$blinking_red_white BLINKING PART $no_style || $bold_black_red BOLD PAR
 sleep 1
 echo
 
+
+### TPUT-Styling with VARIABLE
+echo
+sleep 2
+echo "Assigning style with TPUT in variables:"
+sleep 1
+no_style=$(tput sgr0)
+echo "no_style=\$(tput sgr0)"
+sleep 1
+bold_black_red=$(tput bold; tput setaf 0; tput setab 1)
+echo "bold_black_red=\$(tput bold; tput setaf 0; tput setab 1)"
+sleep 1
+blinking_red_white=$(tput blink; tput setaf 1; tput setab 7)
+echo "blinking_red_white=\$(tput blink; tput setaf 1; tput setab 7)"
+sleep 1
+echo
+sleep 1
+echo
+
+sleep 1
+echo 
+sleep 1
+echo "echo -e '\$blinking_red_white BLINKING PART \$no_style || \$bold_black_red BOLD PART \$no_styl'"
+sleep 1
+echo -e "$blinking_red_white BLINKING PART $no_style || $bold_black_red BOLD PART $no_style"
+sleep 1
+echo
