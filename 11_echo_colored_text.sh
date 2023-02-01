@@ -77,9 +77,9 @@ sleep 1
 echo
 
 sleep 1
-echo "echo -e '\033[7;32;40mStyle:REVERSE | Green on Black\033[0m'-->"
+echo "echo -e '\033[7;32;40m'Style:REVERSE | Green on Black'\033[0m'-->"
 sleep 1
-echo -e '\033[7;32;40mStyle:REVERSE | Green on Black\033[0m'
+echo -e "\033[7;32;40m'Style:REVERSE | Green on Black'\033[0m"
 sleep 1
 echo
 
