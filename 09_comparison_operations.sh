@@ -13,6 +13,8 @@
 
 ### Basic 'str' comparisons
 sleep 1
+echo "BASIC STR COMPARISONS:"
+sleep 1
 echo "Output of [[  'cat' == 'cat' ]] --> "
 sleep 2
 [[ 'cat' == 'cat' ]]
@@ -31,3 +33,25 @@ sleep 2
 echo "echo \$? ==> $(echo $?) { '0': true, '1': false }"
 echo
 
+
+### Basic 'arith' comparisons
+sleep 1
+echo "BASIC ARITHMATIC COMPARISONS:"
+sleep 1
+echo "Output of [[  20 -eq 20 ]] --> "
+sleep 2
+[[ 20 -eq 20 ]]
+echo "echo \$? ==> $(echo $?) { '0': true, '1': false }"
+echo
+sleep 1
+echo "Output of [[  10 -eq 20 ]] --> "
+sleep 2
+[[ 10 -eq 20 ]]
+echo "echo \$? ==> $(echo $?) { '0': true, '1': false }"
+echo
+sleep 1
+echo "Output of [[  20 -gt 100 ]] --> "
+sleep 2
+[[ 20 -gt 100 ]]
+echo "echo \$? ==> $(echo $?) { '0': true, '1': false }"
+echo
