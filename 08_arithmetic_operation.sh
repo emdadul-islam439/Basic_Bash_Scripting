@@ -54,10 +54,19 @@ echo
 sleep 2
 echo "e -= 5 -> ((e-=5)) will be: $((e-=5))"
 echo
-exit
 sleep 2
 echo "e += 5 -> ((e+=5)) will be: $((e+=5))"
 echo
 sleep 2
 echo "e += 5 -> ((e+=5)) will be: $((e+=5))"
+
+
+### Floating point calculation
+echo
+sleep 1
+echo "Integer-division==> 1 / 3 -> ((1 / 3)) will be: $((1/3))"
+echo
+sleep 2
+echo "Decimal-division==> 1 / 3 -> \$(echo 1/3 | bc -l) will be: $(echo 1/3 | bc -l)"
+echo
 
