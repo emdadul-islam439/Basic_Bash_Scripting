@@ -14,12 +14,12 @@ EndOfText
 echo
 echo
 cat <<- EndOfText
-	This is a
-	multiline
-	text string
-	with space/tab
-before multiple lines.
-	without any 'echo'
-	command
+<nothing>This is a
+	<tab>multiline
+	<tab>text string
+	<tab>with space/tab
+ <space>before multiple lines.
+<nothing>without any 'echo'
+	<tab>command
 	EndOfText
 
