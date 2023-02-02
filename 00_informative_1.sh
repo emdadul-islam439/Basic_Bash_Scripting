@@ -34,6 +34,12 @@ cat >> input.txt
 
 
 
+########################## commenting ###########################
 
-
+## MULTI-LINE COMMENT-> Syntex: ": '      '"
+:  '
+This is a 
+multi
+line comment.
+'
 
