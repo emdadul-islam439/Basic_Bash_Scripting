@@ -151,3 +151,7 @@ echo $(expr $n1 / $n2)
 echo
 
 
+### convert HEX number into DEC
+hex_num="FFFF"
+echo -n "The decimal value of $hex_num is: "
+echo "obase=10; ibase=16; $hex_num" | bc
