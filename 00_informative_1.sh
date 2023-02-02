@@ -57,3 +57,30 @@ then
 else
 	echo "age is not correct"
 fi
+
+
+## slightly changed if-else
+echo
+echo "output from slightly new styled if-else statement"
+age=10
+
+if [[ "$age" -gt 18 && "$age" -lt 40 ]]
+then
+        echo "Age is correct"
+else
+        echo "age is not correct"
+fi
+
+
+## slightly changed if-else
+echo
+echo "output from another new styled if-else statement"
+age=10
+
+if [ "$age" -gt 18 -a "$age" -lt 40 ]
+then
+        echo "Age is correct"
+else
+        echo "age is not correct"
+fi
+
