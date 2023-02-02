@@ -129,3 +129,10 @@ elif [ "$str1" \> "$str2" ]; then
 else
 	echo "both str1 and str2 are equal"
 fi
+
+
+## make first char of string Capital (single ^),
+## make all char of string Capital (double ^^)
+echo
+echo "making first letter capital of str1---> ${str1^}"
+echo "making all letters capital of str1---> ${str1^^}"
