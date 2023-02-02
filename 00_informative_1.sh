@@ -155,3 +155,36 @@ echo
 hex_num="FFFF"
 echo -n "The decimal value of $hex_num is: "
 echo "obase=10; ibase=16; $hex_num" | bc
+
+
+### different types of array operations
+car=('BMW' 'Toyota' 'Honda' 'Rover')
+echo 
+echo "printing different array related info"
+echo "${car[@]}"
+echo "${car[1]}"
+echo "${!car[@]}"
+echo "${#car[@]}"
+echo
+unset car[2]
+echo "${car[@]}"
+echo
+
+
+### checking if a directory/file exists
+echo "enter a file/directory name: "
+read file_or_directory_name
+
+if [[ -d $file_or_directory_name || -f $file_or_directory_name ]]; then
+	if [ -d $file_or_directory_name ]; then
+		echo "A directory named $file_or_directory exists!"
+	fi
+	
+	if [ -f $file_or_directory_name ]; then
+		echo "A file named $file_or_directory exists!"
+	fi
+else
+	echo "No file or directory named $file_or_directory_name exists!"
+fi
+
+
