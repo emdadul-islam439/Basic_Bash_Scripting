@@ -112,3 +112,20 @@ while read line
 do
 	echo "$line"
 done < "${1:-/dev/stdin}"
+
+
+## New styled string comparison
+# check lexicographically smaller string
+
+echo "enter 1st string for comparison"
+read str1
+echo "enter 2nd string for comparison"
+read str2
+
+if [ "$str1" \< "str2" ]; then
+	echo "str1 is smaller"
+elif [ "$str1" \> "$str2" ]; then
+	echo "str2 is smaller"
+else
+	echo "both str1 and str2 are equal"
+fi
