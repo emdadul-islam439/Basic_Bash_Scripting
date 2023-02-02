@@ -84,3 +84,31 @@ else
         echo "age is not correct"
 fi
 
+
+## OR-statement if-else
+echo
+echo "output from another new styled if-else statement"
+age=10
+
+if [ "$age" -gt 18 -o "$age" -lt 40 ]
+then
+        echo "Age is correct"
+else
+        echo "age is not correct"
+fi
+
+
+## Read from standard input
+# if any file us given as an argument -> read from it
+# if any file name is not given-> start prompt to receive multi-line input (terminated by ctrl+d)
+echo
+cat <<- Comment
+	Starting to read input from stdin-->
+	(if any file name is not given as argument, 
+	will take input from prompt (terminate using ctrl+d)
+Comment
+
+while read line
+do
+	echo "$line"
+done < "${1:-/dev/stdin}"
