@@ -188,3 +188,74 @@ else
 fi
 
 
+
+### some 'grep' related commands
+# grep $term_to_search $file_to_search
+#
+# case_insensitive_flag="-i"
+# grep $case_insensitive_flag $term_to_search $file_name
+#
+# enable_line_numbering_flag="-n"
+# grep $case_insensitive_flag $enable_line_numbering_flag $term_to_search $file_to_search
+#
+# only_show_line_count_flag="-c"
+# grep $case_insensitive_flag $enable_line_numbering_flag $only_show_line_count_flag  $term_to_search $file_to_search
+#
+# all_lines_without_search_term_flag="-v"
+# grep $case_insensitive_flag $enable_line_numbering_flag $all_lines_without_search_term  $term_to_search $file_to_search
+
+
+
+
+### some "awk" related commands
+# awk "{print}" $fileName
+# 
+# print_all_lines_containing_this_word="linux"
+# awk "/$print_all_lines_containing_this_word/ {print}" $fileName
+#
+# term_number_to_print="2"
+# awk "/$print_all_lines_containing_this_word/ {print $term_number_to_print}" $fileName
+#
+# term_no_1="3"
+# term_no_2="5"
+# term_no_3="1"
+# awk "/$print_all_lines_containing_this_word/ {print $term_no_1,$term_no_2,$term_no_3}" $fileName
+
+
+
+### some "sed" related commands
+# substitute_command="s"
+# term_to_be_replaces="i"
+# replacing_term="I"
+# replace_all_found_terms_command="g" 
+#
+# just replacing the first found term:
+# cat fileName.txt | sed '$substitue_command/$term_to_be_replaced/$replacing_term/'
+#
+# removing all found terms:
+# sed '$substitue_command/$term_to_be_replaced/$replacing_term/$replace_all_found_terms_command' fileName.txt 
+# 
+# another way (not modify the file, just ouput): 
+# sed '$substitue_command/$term_to_be_replaced/$replacing_term/' fileName.txt 
+#
+# saving into another file:
+# sed '$substitue_command/$term_to_be_replaced/$replacing_term/' fileName.txt > backup.txt
+# 
+# changing the input file:
+# sed '$substitue_command/$term_to_be_replaced/$replacing_term/' fileName.txt > fileName.txt
+# Or,
+# sed -i '$substitue_command/$term_to_be_replaced/$replacing_term/' fileName.txt
+# 
+
+
+
+### Enable Debugging:
+# enable while executing the file:
+# bash -x ./bash_script.sh
+#
+# enable inside the file:
+# #!/usr/bin/bash -x
+#
+# from_line to to_line debugging:
+# at line-12: set -x (only this command, nothing else in this line)
+# at line-20: set +x (only this command, nothing else in this line)
