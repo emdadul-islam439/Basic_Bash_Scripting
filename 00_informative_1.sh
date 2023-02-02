@@ -136,3 +136,18 @@ fi
 echo
 echo "making first letter capital of str1---> ${str1^}"
 echo "making all letters capital of str1---> ${str1^^}"
+echo "making 'a' as capital--->${str1^a}"
+
+
+### doing arithmetic operations with 'expr' sign
+echo
+echo
+n1=4
+n2=20
+echo $(expr $n1 + $n2)
+echo $(expr $n1 - $n2)
+echo $(expr $n1 \* $n2) #expr don't recognize '*' character normally
+echo $(expr $n1 / $n2)
+echo
+
+
