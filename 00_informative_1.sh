@@ -43,3 +43,17 @@ multi
 line comment.
 '
 
+
+
+
+########################## about if-else ##########################
+echo
+echo "output from new styled if-else statement"
+age=10
+
+if ["$age" -gt 18 ] && [ "$age" -lt 40 ]
+then
+	echo "Age is correct"
+else
+	echo "age is not correct"
+fi
